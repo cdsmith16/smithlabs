@@ -243,29 +243,29 @@ function Hero({ setPage }) {
 // ─── Products ────────────────────────────────────────────────────────────────
 const products = [
   { 
-    product: "JoLo", 
-    description: "Portfolio accountability tracker with AI-powered progress insights",
-    link: "https://jolo.app", 
-    repo: "https://github.com/christiandean/jolo" 
+    product: "Reserve Map", 
+    description: "Geographic visualization of credit card reservation benefits",
+    link: "https://reservemap.vercel.app", 
+    repo: "https://github.com/cdsmith16/reservemap" 
   },
   { 
     product: "Present", 
-    description: "Thoughtfully designed gift tracking and reminder system",
+    description: "Capture the moment. Gift your reality.",
     link: "", 
-    repo: "" 
+    repo: "Private" 
   },
   { 
-    product: "Link Strippa", 
-    description: "Developer utility for cleaning and managing URLs",
+    product: "Untracked", 
+    description: "URL filter for private, clean link sharing.",
     link: "", 
-    repo: "https://github.com/christiandean/link-strippa" 
+    repo: "https://github.com/cdsmith16/linkstrippa" 
   },
   { 
-    product: "Card Benefits Map", 
-    description: "Geographic visualization of credit card reservation benefits",
-    link: "", 
-    repo: "" 
-  },
+    product: "JoLo", 
+    description: "Portfolio accountability tracker with AI-powered progress insights",
+    link: "https://joloapp.com", 
+    repo: "Private" 
+  }
 ];
 
 function ProductsPage() {
