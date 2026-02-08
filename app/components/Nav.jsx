@@ -31,9 +31,10 @@ export default function Nav({ page, setPage }) {
       }}
     >
       {/* Logo + wordmark */}
-      <button
-        onClick={() => setPage("home")}
-        style={{ background: "none", border: "none", cursor: "pointer", display: "flex", alignItems: "center", gap: 12 }}
+      <a
+        href="#"
+        onClick={(e) => { e.preventDefault(); setPage("home"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+        style={{ textDecoration: "none", display: "flex", alignItems: "center", gap: 12 }}
       >
         <Image src={LOGO_SRC} alt="Smith Labs" width={38} height={38} style={{ objectFit: "contain" }} />
         <span style={{
@@ -42,7 +43,7 @@ export default function Nav({ page, setPage }) {
         }}>
           Smith Labs
         </span>
-      </button>
+      </a>
 
       {/* Links */}
       <div style={{ display: "flex", gap: 36 }}>

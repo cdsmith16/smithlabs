@@ -2,7 +2,7 @@
 import Image from "next/image";
 import brand, { LOGO_SRC, SMOKE_SRC } from "./brand";
 
-export default function NotFoundPage({ setPage }) {
+export default function NotFoundPage() {
   return (
     <div style={{
       minHeight: "100vh", background: "#1a1e2e",
@@ -32,20 +32,22 @@ export default function NotFoundPage({ setPage }) {
         <p style={{ fontFamily: "Oxygen, sans-serif", fontSize: 13, color: "rgba(255,255,255,0.3)", margin: "0 0 28px", fontStyle: "italic" }}>
           This page doesn&apos;t exist. But the vibe does.
         </p>
-        <button
-          onClick={() => setPage("home")}
+        <a
+          href="/"
           style={{
+            display: "inline-block",
             fontFamily: "Raleway, sans-serif", fontWeight: 600, fontSize: 13,
             letterSpacing: "0.1em", textTransform: "uppercase",
             color: brand.tealDark, background: brand.orange,
-            border: "none", borderRadius: 32, padding: "12px 34px", cursor: "pointer",
+            textDecoration: "none",
+            borderRadius: 32, padding: "12px 34px", cursor: "pointer",
             transition: "transform 0.2s",
           }}
           onMouseEnter={(e) => (e.currentTarget.style.transform = "translateY(-2px)")}
           onMouseLeave={(e) => (e.currentTarget.style.transform = "translateY(0)")}
         >
           Back to the garden
-        </button>
+        </a>
       </div>
     </div>
   );
