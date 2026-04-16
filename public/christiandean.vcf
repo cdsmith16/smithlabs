@@ -1,0 +1,13 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//iPhone OS 17.0//EN
+N:Smith;Christian;D.;;
+FN:Christian D. Smith
+ORG:Smith Labs;
+TITLE:AI Product Engineer | Strategist
+EMAIL;type=INTERNET;type=WORK;type=pref:cds@christiandean.me
+TEL;type=CELL;type=VOICE;type=pref:+1 973 866 5547
+URL;type=WORK:https://christiandean.me
+URL;type=LinkedIn:https://www.linkedin.com/in/cdsmith1990
+NOTE:Stanford University (Undergrad) \nEmory Goizueta (MBA) \nFocus: Experienced solutions engineer and deal strategist bringing human intelligence to AI.
+END:VCARD
